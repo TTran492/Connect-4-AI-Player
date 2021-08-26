@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module board.board</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="board.html"><font color="#ffffff">board</font></a>.board</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cthoma%5Cdesktop%5Cconnect4%5Cboard%5Cboard.py">c:\users\thoma\desktop\connect4\board\board.py</a></font></td></tr></table>
+    <p><tt>File&nbsp;Name:&nbsp;board.py<br>
+&nbsp;<br>
+Author:&nbsp;Paul&nbsp;Lee,&nbsp;Thomas&nbsp;Tran<br>
+&nbsp;<br>
+Last&nbsp;Modification&nbsp;Date:&nbsp;4/25/2021<br>
+&nbsp;<br>
+Description:<br>
+Holds&nbsp;class&nbsp;for&nbsp;connect&nbsp;4&nbsp;board.&nbsp;Does&nbsp;the&nbsp;following&nbsp;things:<br>
+1.&nbsp;Holds&nbsp;the&nbsp;board&nbsp;state<br>
+2.&nbsp;Copy&nbsp;board<br>
+3.&nbsp;Get&nbsp;the&nbsp;row&nbsp;and&nbsp;column&nbsp;location<br>
+4.&nbsp;Drop&nbsp;a&nbsp;piece&nbsp;into&nbsp;desired&nbsp;spot<br>
+5.&nbsp;Check&nbsp;valid&nbsp;move<br>
+6.&nbsp;Print&nbsp;the&nbsp;board&nbsp;state<br>
+7.&nbsp;Check&nbsp;if&nbsp;there's&nbsp;a&nbsp;winning&nbsp;state</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="copy.html">copy</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="board.board.html#Board">Board</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Board">class <strong>Board</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Board">Board</a>(current_player)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Board-__init__"><strong>__init__</strong></a>(self, current_player)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Board-check_draw"><strong>check_draw</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Board-copy_board"><strong>copy_board</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Board-drop_piece"><strong>drop_piece</strong></a>(self, col, piece)</dt></dl>
+
+<dl><dt><a name="Board-get_board"><strong>get_board</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Board-get_next_open_row"><strong>get_next_open_row</strong></a>(self, col)</dt></dl>
+
+<dl><dt><a name="Board-get_opp_player"><strong>get_opp_player</strong></a>(self, piece)</dt></dl>
+
+<dl><dt><a name="Board-get_row_col"><strong>get_row_col</strong></a>(self, row, col)</dt></dl>
+
+<dl><dt><a name="Board-get_valid_locations"><strong>get_valid_locations</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Board-is_valid_location"><strong>is_valid_location</strong></a>(self, col)</dt></dl>
+
+<dl><dt><a name="Board-print_board"><strong>print_board</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Board-search_result"><strong>search_result</strong></a>(self, piece)</dt></dl>
+
+<dl><dt><a name="Board-winning_move"><strong>winning_move</strong></a>(self, piece)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>COLUMN_COUNT</strong> = 7</dl>
+
+<dl><dt><strong>CURR_PLAYER</strong> = None</dl>
+
+<dl><dt><strong>EMPTY</strong> = 0</dl>
+
+<dl><dt><strong>PLAYER1_PIECE</strong> = 1</dl>
+
+<dl><dt><strong>PLAYER2_PIECE</strong> = 2</dl>
+
+<dl><dt><strong>PREV_MOVE</strong> = None</dl>
+
+<dl><dt><strong>PREV_PLAYER</strong> = None</dl>
+
+<dl><dt><strong>ROW_COUNT</strong> = 6</dl>
+
+<dl><dt><strong>WINDOW_LENGTH</strong> = 4</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
